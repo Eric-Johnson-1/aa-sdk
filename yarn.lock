@@ -3966,6 +3966,13 @@
   dependencies:
     "@noble/hashes" "1.8.0"
 
+"@noble/curves@^1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@noble/curves/-/curves-1.9.2.tgz#73388356ce733922396214a933ff7c95afcef911"
+  integrity sha512-HxngEd2XUcg9xi20JkwlLCtYwfoFw4JGkuZpT+WlsPD4gB/cxkvTD8fSsoAnphGZhFdZYKeQIPCuFlWPm1uE0g==
+  dependencies:
+    "@noble/hashes" "1.8.0"
+
 "@noble/hashes@1.4.0", "@noble/hashes@~1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.4.0.tgz#45814aa329f30e4fe0ba49426f49dfccdd066426"
@@ -3990,6 +3997,11 @@
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.8.0.tgz#cee43d801fcef9644b11b8194857695acd5f815a"
   integrity sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==
+
+"@noble/secp256k1@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@noble/secp256k1/-/secp256k1-2.3.0.tgz#ddfe6e853472fb88cba4d5e59b7067adc1e64adf"
+  integrity sha512-0TQed2gcBbIrh7Ccyw+y/uZQvbJwm7Ao4scBUxqpBCcsOlZG0O4KGfjtNAy/li4W8n1xt3dxrwJ0beZ2h2G6Kw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -6603,11 +6615,11 @@
     use-sync-external-store "^1.2.2"
 
 "@tanstack/react-virtual@^3.13.9":
-  version "3.13.9"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-virtual/-/react-virtual-3.13.9.tgz#6f87bce08a65c8f4ec6d2c303646ca6b3897e9fe"
-  integrity sha512-SPWC8kwG/dWBf7Py7cfheAPOxuvIv4fFQ54PdmYbg7CpXfsKxkucak43Q0qKsxVthhUJQ1A7CIMAIplq4BjVwA==
+  version "3.13.10"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-virtual/-/react-virtual-3.13.10.tgz#6eec305f01769e1778af98046973b128437c53d5"
+  integrity sha512-nvrzk4E9mWB4124YdJ7/yzwou7IfHxlSef6ugCFcBfRmsnsma3heciiiV97sBNxyc3VuwtZvmwXd0aB5BpucVw==
   dependencies:
-    "@tanstack/virtual-core" "3.13.9"
+    "@tanstack/virtual-core" "3.13.10"
 
 "@tanstack/store@0.3.1", "@tanstack/store@^0.3.1":
   version "0.3.1"
@@ -6619,10 +6631,10 @@
   resolved "https://registry.yarnpkg.com/@tanstack/store/-/store-0.5.5.tgz#84d78568c4a71c885cb15754bf51eca42a776efe"
   integrity sha512-EOSrgdDAJExbvRZEQ/Xhh9iZchXpMN+ga1Bnk8Nmygzs8TfiE6hbzThF+Pr2G19uHL6+DTDTHhJ8VQiOd7l4tA==
 
-"@tanstack/virtual-core@3.13.9":
-  version "3.13.9"
-  resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.13.9.tgz#62b4d2d4351d658101664beacf088fbd061190bf"
-  integrity sha512-3jztt0jpaoJO5TARe2WIHC1UQC3VMLAFUW5mmMo0yrkwtDB2AQP0+sh10BVUpWrnvHjSLvzFizydtEGLCJKFoQ==
+"@tanstack/virtual-core@3.13.10":
+  version "3.13.10"
+  resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.13.10.tgz#141c4da589eda797ee25d14f6aa400dfebac606c"
+  integrity sha512-sPEDhXREou5HyZYqSWIqdU580rsF6FGeN7vpzijmP3KTiOGjOMZASz4Y6+QKjiFQwhWrR58OP8izYaNGVxvViA==
 
 "@tanstack/zod-form-adapter@^0.19.4":
   version "0.19.5"
@@ -6777,6 +6789,15 @@
     "@turnkey/encoding" "0.4.0"
     sha256-uint8array "^0.10.7"
 
+"@turnkey/api-key-stamper@0.4.6":
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/@turnkey/api-key-stamper/-/api-key-stamper-0.4.6.tgz#0356639ab9e7cb1492abc004628b82e49ef7f728"
+  integrity sha512-zUcbhOunsSD//CIKAbfyX9FWchiHcO/CjOdBKvbB+8w6gk/m4NxchVrYCdqdrtxzPFdRYAdFjcUnN0FBvDKobw==
+  dependencies:
+    "@noble/curves" "^1.3.0"
+    "@turnkey/encoding" "0.5.0"
+    sha256-uint8array "^0.10.7"
+
 "@turnkey/crypto@0.2.1":
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/@turnkey/crypto/-/crypto-0.2.1.tgz#d03b61ddfcbdba4c3e1498d2ba83d150c64b84fd"
@@ -6802,6 +6823,11 @@
   resolved "https://registry.yarnpkg.com/@turnkey/encoding/-/encoding-0.4.0.tgz#9d06efe6447322bcc9eb4d51b48961054a3c102d"
   integrity sha512-ptLgcpWVt34KTPx0omF2QLJrosW6I//clCJ4G2+yngYFCzrdR0yBchV/BOcfME67mK1v3MmauyXl9AAnQTmB4Q==
 
+"@turnkey/encoding@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@turnkey/encoding/-/encoding-0.5.0.tgz#415d721383c8267a8ca173cef34298a325a6a57d"
+  integrity sha512-nRlKRQa6B5/xltGUKN1iKo4h4YC/0iFz0fAuFFZevc+YGDj7ddAP/3HkWmVvLmdoicUgs9rxvWbLRlgqPkbwzQ==
+
 "@turnkey/http@2.13.0":
   version "2.13.0"
   resolved "https://registry.yarnpkg.com/@turnkey/http/-/http-2.13.0.tgz#0d27f248ec94a231fe77b6aceb05318e349bc5bc"
@@ -6822,7 +6848,7 @@
     "@turnkey/webauthn-stamper" "0.5.0"
     cross-fetch "^3.1.5"
 
-"@turnkey/http@^2.22.0", "@turnkey/http@^2.6.2":
+"@turnkey/http@^2.6.2":
   version "2.22.0"
   resolved "https://registry.yarnpkg.com/@turnkey/http/-/http-2.22.0.tgz#89233e44f467dbb289351832f76700d9b550a5d3"
   integrity sha512-nkzSIiur68PDEXh0E6fPpgrev0qeMfnVjeh/nWePZpS6TwJ7NGw1i4WRqZ1VkQ+ODmCD2ztKMzUhii9b4pzURg==
@@ -6830,6 +6856,16 @@
     "@turnkey/api-key-stamper" "0.4.4"
     "@turnkey/encoding" "0.4.0"
     "@turnkey/webauthn-stamper" "0.5.0"
+    cross-fetch "^3.1.5"
+
+"@turnkey/http@^3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@turnkey/http/-/http-3.4.2.tgz#714d010b8d5ea12c8d60ea3a7da44be64fcffbde"
+  integrity sha512-UFJxnEjOSXBmmozsUrBBRMqA9ErCqMen4VkYu+C5cyDAAKgCq01fNEtp+CakD+npd35WbtfevIW5q7JdJ6nP0w==
+  dependencies:
+    "@turnkey/api-key-stamper" "0.4.6"
+    "@turnkey/encoding" "0.5.0"
+    "@turnkey/webauthn-stamper" "0.5.1"
     cross-fetch "^3.1.5"
 
 "@turnkey/iframe-stamper@2.0.0":
@@ -6841,6 +6877,11 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@turnkey/iframe-stamper/-/iframe-stamper-1.2.0.tgz#bba478e391a266833f1a5960b9f1df9de5934fb8"
   integrity sha512-OXbCVVzypa0AXa6dcNpfu8Q0xY/sq2nGXwhesrUQmE7V5I5nYYHZE3sQv54lErToX6H6YyDR9Z1DuPzEUkYTjw==
+
+"@turnkey/iframe-stamper@^2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@turnkey/iframe-stamper/-/iframe-stamper-2.5.0.tgz#4543458a3ac380c96f239c6c2a997c03bac0bd7b"
+  integrity sha512-XjntbA5CNjxGRH+loceAlVLL9PG9Q4Y7p5zjBm4DeKclhD6lpUl9h8INArMEXIFbfLwLjjS6Q+SmQG4BHvNY6A==
 
 "@turnkey/react-native-passkey-stamper@^1.0.14":
   version "1.0.14"
@@ -6897,6 +6938,13 @@
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@turnkey/webauthn-stamper/-/webauthn-stamper-0.5.0.tgz#014b8c20b1732af49dacb04f396edf010d3b7f47"
   integrity sha512-iUbTUwD4f4ibdLy5PWWb7ITEz4S4VAP9/mNjFhoRY3cKVVTDfmykrVTKjPOIHWzDgAmLtgrLvySIIC9ZBVENBw==
+  dependencies:
+    sha256-uint8array "^0.10.7"
+
+"@turnkey/webauthn-stamper@0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@turnkey/webauthn-stamper/-/webauthn-stamper-0.5.1.tgz#3c159cd662dd73fd46fe4a38a504b222adddd2ea"
+  integrity sha512-eBwceTStSSettBQsLo3X5eJEarcK9f20cGUdi6jOesXOP86iYEIgR4+aH2qyCQ3eaovj+Hl44UGngXueIm/tKg==
   dependencies:
     sha256-uint8array "^0.10.7"
 
@@ -8879,10 +8927,15 @@ acorn-walk@^8.1.1:
   dependencies:
     acorn "^8.11.0"
 
-acorn@^8.0.0, acorn@^8.11.0, acorn@^8.14.0, acorn@^8.14.1, acorn@^8.4.1, acorn@^8.6.0, acorn@^8.9.0:
+acorn@^8.0.0, acorn@^8.11.0, acorn@^8.14.0, acorn@^8.14.1, acorn@^8.4.1, acorn@^8.9.0:
   version "8.14.1"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.14.1.tgz#721d5dc10f7d5b5609a891773d47731796935dfb"
   integrity sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==
+
+acorn@^8.6.0:
+  version "8.15.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.15.0.tgz#a360898bc415edaac46c8241f6383975b930b816"
+  integrity sha512-NZyJarBfL7nWwIq+FDL6Zp/yHEhePMNnnJ0y3qfieCrmNvYct8uvtiV41UvlSe6apAfk0fY1FbWx+NwfmpvtTg==
 
 add-stream@^1.0.0:
   version "1.0.0"
@@ -15748,7 +15801,7 @@ js-sha3@0.8.0:
 
 js-yaml@4.1.0, js-yaml@^4.1.0:
   version "4.1.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
+  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
   integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
   dependencies:
     argparse "^2.0.1"
@@ -23868,7 +23921,7 @@ yaml@^1.10.0:
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==
 
-yaml@^2.0.0, yaml@^2.2.1, yaml@^2.2.2, yaml@^2.3.4, yaml@^2.6.0, yaml@^2.7.0:
+yaml@^2.0.0, yaml@^2.2.1, yaml@^2.2.2, yaml@^2.3.4, yaml@^2.6.0, yaml@^2.7.0, yaml@^2.8.0:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/yaml/-/yaml-2.8.0.tgz#15f8c9866211bdc2d3781a0890e44d4fa1a5fff6"
   integrity sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==
